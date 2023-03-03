@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상 클래스</title>
+  <style>
+    /*변수로 저장하여 한번에 바꿀때 변수 자체에서 수정하면 다 수정되기에 유용하게 사용할 수 있다 */
+    :root{
+        --main-color:red;
+        --pane-padding: 5px 42px;
+    }
+
+    li:first-child {
+      color: var(--main-color);
+    }
+
+    li:last-child {
+      color: sandybrown;
+    }
+
+    li:nth-child(3) {
+        color: var(--main-color);
+    }
+
+    /* 홀수 */
+    /* li:nth-child(odd) {
+      text-decoration: underline;
+    } */
+
+    li:nth-child(2n+1) {
+      text-decoration: underline;
+    }
+
+    /* 짝수 */
+    /* li:nth-child(even) {
+      text-decoration: line-through rosybrown;
+    } */
+
+    li:nth-child(2n) {
+      text-decoration: line-through rosybrown;
+    }
+
+    li:nth-of-type(3) {
+        
+    }
+    /* div 자식 요소중에 3번째 */
+    div :nth-of-type(3){
+        color: royalblue;
+    }
+ /* p 자식 요소중에 3번째 */
+    p:nth-child(3){
+        text-decoration: underline;
+    }
+
+    div:only-of-type{
+        border: 2px solid salmon;
+    }
+
+    p:not(:first-child){
+        border :2px solid blue;
+    }
+    /* .last-child {
+      color: sandybrown;
+    } */
+  </style>
+</head>
+
+<body>
+    <!---->
+
+  <!---->
+  <div>
+    <p>첫번째</p>
+    <p>두번째</p>
+    <p>세번째</p>
+    <p>네번째</p>
+    <div>다섯번째</div>
+    <p>여섯번째</p>
+    <p>일곱번째</p>
+    <p>여덟번째</p>
+    <p>아홉번째</p>
+    <p>열번째</p>
+  </div>
+
+</body>
+
+</html>
