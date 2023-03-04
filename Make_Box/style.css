@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*{
+    font-family: 'BMJUA';
+}*/
+
+div{
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    ;
+}
+
+
+.box1 {
+    background: #343F50;
+    box-shadow: 0 0 0 3px #000;
+    border-top: 3px solid #4a5568;
+    border-left: 3px solid #4a5568;
+  
+    
+}
+.box2{
+    
+    background:linear-gradient(to right, #894df6, #386af1);
+    border: 5px dashed  #e6d6ff;
+    border-radius: 25px;
+}
+
+.box3{
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid #D3D1CB;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+
+/*background-color: #94bbe9; //blue
+background-color : rgb(55, 53, 47); //black
+ background-color: #82C7FF; //mac blue
+background-color: #8ab3f2
+
+background-color: rgba(348, 75, 97, 100) /red
+box-shadow: 0 2px 10px 2px #00d4ff ; /blue
+ box-shadow: 0 2px 10px 2px #ff8cfe ; /red
+*/
