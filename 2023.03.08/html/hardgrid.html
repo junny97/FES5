@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gird예제2</title>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns : 3fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-areas: 
+        "a a b"
+        "c d b"
+        "e f f";
+
+        gap: 10px;
+        width: 300px;
+        height: 300px;
+        
+
+    }
+    .a{
+        background: skyblue;
+        grid-area: a;
+       
+    }
+
+    .b{
+        background: lightcoral;
+        grid-area: b;
+        
+    }
+    .c{
+        background: lightgreen;
+        grid-area: c;
+       
+    }
+    .d{
+        background: lightsalmon;
+        grid-area: d;
+       
+    }
+    .e{
+        background: lightcyan;
+        grid-area: e;
+       
+    }
+    .f{
+        background: green;
+       grid-area: f;
+    }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+    <div class="f">f</div>
+  </div>
+ 
+</body>
+</html>

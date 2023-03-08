@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img실습</title>
+
+    <style>
+        .wrap{
+            background: yellow;
+           
+            
+        }
+
+        img{
+            vertical-align: top;
+            /* display: block; */
+            
+            
+        }
+
+        .deft{
+          
+  width:300px;
+  aspect-ratio: 2 / 1;
+  object-fit:cover;
+        }
+
+.deft2{
+    position: relative;
+  height: 50;
+  padding-top: 50%; 
+  overflow: hidden;
+}
+
+.deft2 img{
+   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    
+    </style>
+</head>
+<body>
+  <div>안녕하세요</div>
+  <p>프론트엔드</p>
+
+  <div class="wrap">
+   <figure>
+    <img src="/weniv-binky.png" alt="">
+    <figcaption>
+		관심 받고 싶어 하는 아기
+	</figcaption>
+</figure>
+<img src="/weniv-binky.png"usemap="#image-map">
+
+<img class="deft" src="/HTML-CSS/img/deft1.jpg" alt="">
+    <map name="image-map">
+
+        
+        <area target="_blank" alt="네이버" title="네이버" href="https://www.naver.com/" coords="139,140,130,128,134,104,146,106,154,134,170,135,191,156,196,174,199,205,176,213,147,209,119,207,111,189,122,169" shape="poly">
+        <area target="" alt="" title="" href="" coords="" shape="0">
+    </map>
+</div>
+
+
+<div>
+    <img class="deft2" src="/HTML-CSS/img/Deft.jpeg" alt="">
+</div>
+</body>
+</html>

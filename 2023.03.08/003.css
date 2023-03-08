@@ -1,0 +1,58 @@
+
+
+.wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.wrap2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.wrap2 section{
+    flex-grow: 1;
+}
+
+header, footer{
+    flex-basis: 50px;
+}
+
+.wrap2 aside{
+    flex-basis: 200px;
+}
+header{
+    background: royalblue;
+ 
+}
+
+section{
+    background: lightblue;
+  
+}
+
+aside{
+    background: lightcoral;
+    
+}
+
+footer{
+    background: lightgreen;
+   
+}
+
+header,
+section,
+aside,
+footer{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  
+}

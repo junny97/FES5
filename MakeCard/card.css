@@ -1,0 +1,103 @@
+body{
+    background: gray;
+}
+
+.card-item{
+    width: 288px;
+    display: block;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+
+
+.mainbox img{
+    float: left;
+    border-radius: 20px;
+   margin: 10px 10px ;
+}
+
+.mainbox h2{
+    text-align: left;
+    font-size: 16px;
+    padding-top: 13px;
+    font-weight: 700;
+    line-height: 19px;
+     
+    
+}
+
+.mainbox p{
+    font-size: 12px;
+    text-align: center;
+    padding-right: 130px;
+    line-height: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    
+}
+
+.main-img{
+    
+    width: 100%; 
+    aspect-ratio: 288 / 196; /*박스 아이템 크기에 맞춰 사진 크기 설정 */
+    object-fit: cover;/* 위 요소들의 크기에 맞게 태그의 크기를 조절해주는 역할 */
+    vertical-align: top;
+}
+
+.card-text{
+    padding: 0px 16px 16px;
+
+}
+
+.lorem{
+    color: #5A6A72;
+    font-size: 12px;
+     /*멀티라인 글자제한 하는법*/
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    /*<---------------->*/
+    margin: 12px;
+    line-height: 20px;
+    
+
+}
+
+/* .subbox{
+    overflow: hidden;
+    
+} */
+.read{
+    /* float: left; */
+    display: inline-block;
+    padding-right: 10px;
+    height: 18px;
+    font-weight: 700;
+    line-height: 17px;
+    text-decoration-line: underline;
+    
+}
+
+.button{
+    /* float: center;
+    padding-left: 40px; */
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: 700;
+
+}
+
+.first-img{
+    padding-left: 100px;
+}
+img{
+    display: inline-block;
+    width:22px;
+    
+}
+
