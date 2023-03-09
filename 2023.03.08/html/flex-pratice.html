@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex실습</title>
+    <style>
+        .wrap{
+          width: 500px;
+          text-align: center;
+          
+            
+        }
+        header,
+        footer{
+            padding: 20px;
+        }
+        section,
+        aside{
+            padding: 50px;
+        }
+        header{
+            background: lightblue;
+            
+            
+        }
+        section{
+            background: lightcoral;
+        }
+        aside{
+            background: lightgreen;
+        }
+        footer{
+            background: lightseagreen;
+        }
+        section
+        {   
+            flex-basis: 70%;
+        }
+        aside{
+            flex-basis: 30%;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+           
+        
+        }
+
+    </style>
+</head>
+<body>
+        <div class="wrap">
+        <header>header</header>
+        <div class="container">
+        <section>section</section>
+        <aside>aside</aside>
+         </div>
+        <footer>footer</footer>
+    </div>
+ 
+
+</body>
+</html>

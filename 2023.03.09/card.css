@@ -3,13 +3,13 @@ body{
 }
 
 .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-template-rows:repeat(2, 1fr); */
+    display: flex;
+    flex-flow: row wrap;
     gap: 32px 24px;
     width: min(1224px, calc(100% - 60px));
     margin: auto; /*가운대 정렬 margin-auto */
+  
+
 }
 
 .card-item a{
